@@ -25,7 +25,7 @@ const IndexPage = () => {
           Search...
         </p>
       </div>
-      <div className="m-10 grid grid-cols-4 gap-4">
+      <div className="m-20 grid grid-cols-3 gap-6">
         {fonts.map((font) => (
           <div
             key={font}
