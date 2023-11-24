@@ -16,10 +16,10 @@ const IndexPage = () => {
             <p className="text-3xl text-center text-[#0F0800] pb-16">
               THEY'RE CALLED TYPEFACES
             </p>
-            <div className="flex justify-center space-x-10 m-2">
-              <div className="w-1/4">
+            <div className="flex justify-center space-x-40 m-2">
+              <div className="w-1/6">
                 <Link href={{ pathname: "/browse" }}>
-                  <p className="text-6xl text-center p-3 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
+                  <p className="text-6xl text-center py-3 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
                     Browse
                   </p>
                 </Link>
@@ -30,7 +30,7 @@ const IndexPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-1/4">
+              <div className="w-1/6">
                 <Link href={{ pathname: "/detect" }}>
                   <p className="text-6xl text-center p-3 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
                     Detect

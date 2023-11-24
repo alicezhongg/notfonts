@@ -1,11 +1,15 @@
 import React from "react";
 import FontBox from "@/components/FontBox";
+import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import Image from "next/image";
 
 const IndexPage = () => {
   return (
     <>
+      <div>
+        <NavBar />
+      </div>
       <div>
         <h1 className="text-9xl text-center mt-[20rem] mb-3">Karla</h1>
         <div className="m-10 grid grid-cols-3 gap-4">

@@ -1,10 +1,14 @@
 import React from "react";
 import FontBox from "@/components/FontBox";
+import NavBar from "@/components/NavBar";
 import Link from "next/link";
 
 const IndexPage = () => {
   return (
     <>
+      <div>
+        <NavBar />
+      </div>
       <div>
         <h1 className="text-9xl text-center mt-[20rem] mb-3">NOTFONTS</h1>
         <p className="text-3xl text-center mb-6">THEY'RE CALLED TYPEFACES</p>
