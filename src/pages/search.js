@@ -6,13 +6,16 @@ import Image from "next/image";
 
 const IndexPage = () => {
   const [fonts, setFonts] = React.useState([
-    "Karla",
+    "Alice",
+    "Droog Heavy",
+    "Galvji Regular",
+    "Karla Regular",
+    "Miller Display Bold",
+    "Playfair Display Bold",
+    "Proxima Nova ExtraBold",
+    "TAN Pearl",
     "ZCOOL Kuai Le",
     "ZCool QingKe HuangYou",
-    "Alice ",
-    "Playfair Display",
-    "Times New Roman",
-    "Verdana",
   ]);
 
   return (

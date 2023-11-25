@@ -6,13 +6,21 @@ import Image from "next/image";
 
 const IndexPage = () => {
   const [fonts, setFonts] = React.useState([
-    "Karla",
-    "ZCOOL Kuai Le",
-    "ZCool QingKe HuangYou",
-    "Alice ",
-    "Playfair Display",
-    "Times New Roman",
-    "Verdana",
+    "Adobe Jenson Pro Light Caption",
+    "Alice",
+    "Droog Heavy",
+    "Galvji Regular",
+    "HanziPen TC Regular",
+    "Karla Regular",
+    "Lantinghei SC Extralight",
+    "LingWai TC Medium",
+    "Miller Display Bold",
+    "Playfair Display Bold",
+    "Proxima Nova ExtraBold",
+    "Rajdhani Medium",
+    "TAN Pearl",
+    "Wawati SC Regular",
+    "蘋方-繁 Medium",
   ]);
 
   return (
@@ -24,14 +32,16 @@ const IndexPage = () => {
         {fonts.map((font) => (
           <div
             key={font}
-            className="outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg"
+            className="outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg"
           >
-            <Image
+            <Link href={"/" + font.toLowerCase() + "graphic"}>
+                <Image
               src={"/" + font.toLowerCase() + "graphic.png"}
               alt="Picture of the graphic"
               width={500}
               height={500}
-            />
+                />
+            </Link>
             <FontBox name={font} />
           </div>
         ))}
