@@ -6,17 +6,28 @@ import Image from "next/image";
 
 const IndexPage = () => {
   const [fonts, setFonts] = React.useState([
+    "Adobe Jenson Pro",
     "Alice",
-    "Droog Heavy",
-    "Galvji Regular",
-    "Karla Regular",
-    "Miller Display Bold",
-    "Playfair Display Bold",
-    "Proxima Nova ExtraBold",
+    "Droog",
+    "Galvji",
+    "HanziPen TC",
+    "Highway Gothic",
+    "Karla",
+    "Lantinghei SC",
+    "LingWai TC",
+    "Miller Display",
+    "Playfair Display",
+    "Proxima Nova",
+    "Rajdhani",
+    "San Francisco",
     "TAN Pearl",
-    "ZCOOL Kuai Le",
-    "ZCool QingKe HuangYou",
+    "Wawati SC",
+    "蘋方-繁",
   ]);
+
+  const removeSpace = (str) => {
+    return str.replace(/\s+/g, "");
+  };
 
   return (
     <>
@@ -28,18 +39,20 @@ const IndexPage = () => {
           Search...
         </p>
       </div>
-      <div className="m-20 grid grid-cols-3 gap-6">
+      <div className="m-10 grid grid-cols-3 gap-4">
         {fonts.map((font) => (
           <div
             key={font}
-            className="outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg"
+            className="outline outline-[#E6E7E6] bg-[#FFFFFF] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg"
           >
-            <Image
-              src={"/" + font.toLowerCase() + "typeface.png"}
-              alt="Picture of the graphic"
-              width={500}
-              height={500}
-            />
+            <Link href={"/" + removeSpace(font.toLowerCase())}>
+              <Image
+                src={"/" + font.toLowerCase() + ".png"}
+                alt="Picture of the typeface"
+                width={500}
+                height={500}
+              />
+            </Link>
             <FontBox name={font} />
           </div>
         ))}

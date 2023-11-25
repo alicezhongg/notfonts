@@ -11,6 +11,7 @@ const IndexPage = () => {
     "Droog Heavy",
     "Galvji Regular",
     "HanziPen TC Regular",
+    "Highway Gothic",
     "Karla Regular",
     "Lantinghei SC Extralight",
     "LingWai TC Medium",
@@ -18,10 +19,15 @@ const IndexPage = () => {
     "Playfair Display Bold",
     "Proxima Nova ExtraBold",
     "Rajdhani Medium",
+    "San Francisco",
     "TAN Pearl",
     "Wawati SC Regular",
     "蘋方-繁 Medium",
   ]);
+
+  const removeSpace = (str) => {
+    return str.replace(/\s+/g, "");
+  };
 
   return (
     <>
@@ -34,13 +40,13 @@ const IndexPage = () => {
             key={font}
             className="outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg"
           >
-            <Link href={"/" + font.toLowerCase() + "graphic"}>
-                <Image
-              src={"/" + font.toLowerCase() + "graphic.png"}
-              alt="Picture of the graphic"
-              width={500}
-              height={500}
-                />
+            <Link href={"/" + removeSpace(font.toLowerCase()) + "graphic"}>
+              <Image
+                src={"/" + font.toLowerCase() + "graphic.png"}
+                alt="Picture of the graphic"
+                width={500}
+                height={500}
+              />
             </Link>
             <FontBox name={font} />
           </div>
