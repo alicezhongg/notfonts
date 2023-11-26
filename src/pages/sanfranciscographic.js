@@ -4,6 +4,10 @@ import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import Image from "next/image";
 
+const removeSpace = (str) => {
+  return str.replace(/\s+/g, "");
+};
+
 const IndexPage = () => {
   const [font, setFont] = React.useState("San Francisco");
 
@@ -14,7 +18,7 @@ const IndexPage = () => {
       </div>
       <div className="pt-20">
         <div key={font} className=" flex justify-center mx-20">
-          <div className="pt-20 px-20">
+          <div className="pt-20 px-10 w-2/5">
             <Link href={{ pathname: "/sanfrancisco" }}>
               <h1 className="text-5xl text-left text-[#265479]">
                 San Francisco
@@ -30,13 +34,15 @@ const IndexPage = () => {
               </p>
             </Link>
           </div>
-          <Image
-            className="outline outline-[#E6E7E6] rounded-lg outline-2"
-            src={"/" + font.toLowerCase() + "graphic.png"}
-            alt="Picture of the graphic"
-            width={980}
-            height={500}
-          />
+          <div className="w-3/5">
+            <Image
+              className="outline outline-[#E6E7E6] rounded-lg outline-2"
+              src={"/" + font.toLowerCase() + "graphic.png"}
+              alt="Picture of the graphic"
+              width={980}
+              height={500}
+            />
+          </div>
         </div>
       </div>
     </>

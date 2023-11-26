@@ -19,7 +19,7 @@ const IndexPage = () => {
             <div className="flex justify-center divide-x-2 divide-dashed space-x-20 m-2 ">
               <div className="w-1/5">
                 <Link href={{ pathname: "/browse" }}>
-                  <p className="text-6xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
+                  <p className="text-6xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-md">
                     Browse
                   </p>
                 </Link>
@@ -32,7 +32,7 @@ const IndexPage = () => {
               </div>
               <div className="w-1/5">
                 <Link href={{ pathname: "/detect" }}>
-                  <p className="text-6xl text-center p-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
+                  <p className="text-6xl text-center p-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-md">
                     Detect
                   </p>
                 </Link>

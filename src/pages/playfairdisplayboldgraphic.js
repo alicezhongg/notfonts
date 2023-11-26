@@ -13,8 +13,8 @@ const IndexPage = () => {
         <NavBar />
       </div>
       <div className="pt-20">
-        <div key={font} className=" flex justify-center mx-20">
-          <div className="pt-20 px-20">
+        <div key={font} className="flex justify-center mx-20">
+          <div className="pt-20 px-10 w-2/5">
             <Link href={{ pathname: "/karlaregulartypeface" }}>
               <h1 className="text-5xl text-left text-[#265479]">
                 Playfair Display Bold
@@ -33,13 +33,15 @@ const IndexPage = () => {
               </p>
             </Link>
           </div>
-          <Image
-            className="outline outline-[#E6E7E6] rounded-lg outline-2 text-[#0F0800]"
-            src={"/" + font.toLowerCase() + "graphic.png"}
-            alt="Picture of the graphic"
-            width={980}
-            height={500}
-          />
+          <div className="w-3/5">
+            <Image
+              className="outline outline-[#E6E7E6] rounded-lg outline-2 text-[#0F0800]"
+              src={"/" + font.toLowerCase() + "graphic.png"}
+              alt="Picture of the graphic"
+              width={980}
+              height={500}
+            />
+          </div>
         </div>
       </div>
     </>

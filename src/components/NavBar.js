@@ -7,7 +7,7 @@ const NavBar = () => {
       <div className="flex justify-left space-x-2 text-[#0f0800] text-lg">
         <Link href={{ pathname: "/" }}>
           <div className="w-1/8 text-center">
-            <p className="p-2 rounded-md">NotFonts</p>
+            <p className="p-2 ml-2 rounded-md">NotFonts</p>
           </div>
         </Link>
         <Link href={{ pathname: "/browse" }}>
