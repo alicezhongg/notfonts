@@ -34,7 +34,7 @@ const IndexPage = () => {
       <div>
         <NavBar />
       </div>
-      <div className="m-10 grid grid-cols-3 gap-4">
+      <div className="m-10 grid grid-cols-3 gap-4 mt-20">
         {fonts.map((font) => (
           <div
             key={font}

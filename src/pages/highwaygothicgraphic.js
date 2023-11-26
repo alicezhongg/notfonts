@@ -20,8 +20,10 @@ const IndexPage = () => {
                 Highway Gothic
               </h1>
             </Link>
-            <p className="py-6">
-              The font designed for highway signs in the United States. There is a whole debate on the typefaces of US Highways, but in the end, Highway Gothic has prevailed.
+            <p className="text-xl py-6 text-[#0F0800]">
+              The typeface Highway Gothic is designed for highway signs in the United States. There is
+              a whole debate on the typefaces of US Highways, but in the end,
+              Highway Gothic has prevailed.
             </p>
             <Link href={{ pathname: "/highwaygothic" }}>
               <p className="w-1/3 text-xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
@@ -33,7 +35,7 @@ const IndexPage = () => {
             className="outline outline-[#E6E7E6] rounded-lg outline-2"
             src={"/" + font.toLowerCase() + "graphic.png"}
             alt="Picture of the graphic"
-            width={1000}
+            width={980}
             height={500}
           />
         </div>
