@@ -26,7 +26,7 @@ const IndexPage = () => {
               Highways, but in the end, Highway Gothic has prevailed.
             </p>
             <Link href={{ pathname: "/highwaygothic" }}>
-              <p className="w-1/3 text-xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
+              <p className="text-xl text-center p-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
                 Go to Typeface
               </p>
             </Link>

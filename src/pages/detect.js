@@ -10,13 +10,12 @@ const IndexPage = () => {
   const [detectedFont, setDetectedFont] = useState(null);
   const [fontMap, setFontMap] = useState([
     {
-      filename: "karla.png",
+      filename: "karla_test.png",
       font: "Karla",
     },
   ]);
   const [fonts, setFonts] = React.useState([
     "Galvji",
-    "Karla",
     "Proxima Nova",
     "San Francisco",
   ]);
@@ -76,24 +75,26 @@ const IndexPage = () => {
           <p className="font-medium text-xl text-center text-[#0F0800] pb-4">
             Please upload a BLACK & WHITE image
           </p>
-          <div className="w-[500px] h-[300px] mt-4 ">
+          <div className="w-[600px] h-[400px] mt-4 ">
             {!selectedImage && (
               <div className="w-full h-full">
                 <div className="bg-[#E6E7E6] outline outline-[#E6E7E6] rounded-lg w-full h-full"></div>
               </div>
             )}
-            {selectedImage && (
-              <div className="w-[500px] h-[300px]">
-                <Image
-                  src={selectedImage}
-                  alt="Selected"
-                  width={500}
-                  height={300}
-                />
-              </div>
-            )}
+            <div className="flex justify-center">
+              {selectedImage && (
+                <div className="w-[500px] h-[300px]">
+                  <Image
+                    src={selectedImage}
+                    alt="Selected"
+                    width={500}
+                    height={300}
+                  />
+                </div>
+              )}
+            </div>
           </div>
-          <div className="flex justify-center space-x-10 mt-4">
+          <div className="flex justify-center space-x-10 mt-4 mb-10">
             <label className="cursor-pointer text-lg py-2 px-4 rounded-full text-[#265479] outline outline-[#E6E7E6] outline-2 hover:bg-[#265479] hover:text-[#FFFEFB] hover:shadow-md">
               Choose Image
               <input
@@ -117,19 +118,33 @@ const IndexPage = () => {
           {!isLoading && detectedFont && (
             <div>
               <div className="flex justify-center mt-4">
-                <p className="font-medium text-3xl text-center text-[#265479] py-4">
+                <p className="font-medium text-[#265479] text-3xl text-center py-2">
                   Detected Typeface: {detectedFont}
                 </p>
               </div>
-              <Link href={{ pathname: "/karla" }}>
-                <p className="w-1/4 text-xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
-                  Go to Typeface
-                </p>
-              </Link>
+              <div className="flex justify-center image-center pt-4">
+                <div className="outline outline-[#E6E7E6] rounded-lg outline-2">
+                  <Link href={"/karla"}>
+                    <Image
+                      src={"/karla.png"}
+                      alt="Picture of the typeface"
+                      width={500}
+                      height={500}
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div className="flex justify-center mt-4">
+                <Link href={{ pathname: "/karla" }}>
+                  <p className="text-3xl text-center p-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
+                    Go to Typeface
+                  </p>
+                </Link>
+              </div>
               <div className="flex justify-left mx-20 w-[200%]">
-                <div className="pt-20 px-10 w-2/5">
+                <div className="pt-10 px-10 w-2/5">
                   <h1 className="text-3xl text-left text-[#265479] py-4">
-                    Similar Typeface
+                    Similar Typefaces
                   </h1>
                   <div className="grid grid-cols-4 gap-4">
                     {fonts.map((font) => (

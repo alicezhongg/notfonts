@@ -21,19 +21,20 @@ const NavBar = () => {
             </p>
           </div> */}
         </Link>
-        <Link href={{ pathname: "/browse" }}>
-          <div className="w-1/8 text-center">
-            <p className="p-2 rounded-md">Browse</p>
-          </div>
-        </Link>
         <Link href={{ pathname: "/detect" }}>
           <div className="w-1/8 text-center">
-            <p className="p-2 rounded-md">Detect</p>
+            <p className="p-2 hover:text-[#265479]">Detect</p>
           </div>
         </Link>
+        <Link href={{ pathname: "/browse" }}>
+          <div className="w-1/8 text-center">
+            <p className="p-2 hover:text-[#265479]">Browse</p>
+          </div>
+        </Link>
+
         <Link href={{ pathname: "/search" }}>
           <div className="w-1/8 text-center">
-            <p className="p-2 rounded-md">Search</p>
+            <p className="p-2 hover:text-[#265479]">Search</p>
           </div>
         </Link>
       </div>
