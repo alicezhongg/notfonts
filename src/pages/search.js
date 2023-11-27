@@ -91,21 +91,29 @@ const IndexPage = () => {
           type="text"
           placeholder="Search"
           onChange={onSearchChange}
-          className="font-Karla font-regular w-[95%] flex justify-left m-10 mt-20 p-1 pl-4 outline outline-[#E6E7E6] rounded-full outline-2 text-xl text-[#0F0800]"
+          className="font-Karla font-regular w-[95%] flex justify-left mx-10 mt-20 p-1 pl-4 outline outline-[#E6E7E6] rounded-full outline-2 text-xl text-[#0F0800]"
         />
       </div>
-      <div className="m-10 p-1 pl-4">
-        <GrFilter />
-        <select onChange={(e) => handleFilterChange(e, "language")}>
-          <option value="">All Languages</option>
-          <option value="english">English</option>
-          <option value="chinese">Chinese</option>
-        </select>
-        <select onChange={(e) => handleFilterChange(e, "type")}>
-          <option value="">All Types</option>
-          <option value="serif">Serif</option>
-          <option value="sans-serif">Sans_serif</option>
-        </select>
+      <div className="flex justify-left space-x-5 m-5 ml-10 p-2 pl-4">
+        <div className="flex space-x-2 text-lg text-left">
+          <div className="text-3xl text-[#265479]">
+            <GrFilter />
+          </div>
+          <div className="rounded-full text-[#265479] hover:outline outline-[#E6E7E6] outline-2 hover:shadow-md">
+            <select onChange={(e) => handleFilterChange(e, "language")}>
+              <option value="">All Languages</option>
+              <option value="english">English</option>
+              <option value="chinese">Chinese</option>
+            </select>
+          </div>
+          <div className="rounded-full text-[#265479] hover:outline outline-[#E6E7E6] outline-2 hover:shadow-md">
+            <select onChange={(e) => handleFilterChange(e, "type")}>
+              <option value="">All Types</option>
+              <option value="serif">Serif</option>
+              <option value="sans-serif">Sans-serif</option>
+            </select>
+          </div>
+        </div>
       </div>
       <div className="font-Karla font-regular m-10 grid grid-cols-3 gap-4">
         {searchFonts.map((font) => (
