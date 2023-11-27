@@ -2,6 +2,7 @@ import React from "react";
 import FontBox from "@/components/FontBox";
 import NavBar from "@/components/NavBar";
 import Link from "next/link";
+import Image from "next/image";
 
 const IndexPage = () => {
   return (
@@ -11,9 +12,17 @@ const IndexPage = () => {
       </div>
       <div className="font-Karla font-regular flex items-center justify-center h-screen">
         <div className="align-middle">
-          <h1 className="text-9xl font-extrabold text-center text-[#265479] pb-3">
+          <div className="flex justify-center">
+            <Image
+            src="/logo.png"
+            alt="Picture of the logo"
+            width={800}
+            height={300}
+          />
+          </div>
+          {/* <h1 className="text-9xl font-extrabold text-center text-[#265479] pb-3">
             NOTFONTS
-          </h1>
+          </h1> */}
           <div>
             <p className="text-3xl text-center text-[#0F0800]">
               Never know where to find typefaces? We got you covered!
