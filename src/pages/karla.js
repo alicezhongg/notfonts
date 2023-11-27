@@ -18,7 +18,7 @@ const removeSpace = (str) => {
 };
 
 const IndexPage = () => {
-  const [fonts, setFonts] = React.useState(["Karla"]);
+  const [fonts, setFonts] = React.useState(["Karla Regular"]);
 
   return (
     <>
