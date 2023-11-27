@@ -1,15 +1,25 @@
 import React, { useState } from "react";
+import FontBox from "@/components/FontBox";
 import NavBar from "@/components/NavBar";
+import Link from "next/link";
 import Image from "next/image";
 
 const IndexPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [fileName, setFileName] = useState("");
   const [detectedFont, setDetectedFont] = useState(null);
-  const [fontMap, setFontMap] = useState([{
-    filename: "karla.png",
-    font: "karla",
-  }]);
+  const [fontMap, setFontMap] = useState([
+    {
+      filename: "karla.png",
+      font: "Karla",
+    },
+  ]);
+  const [fonts, setFonts] = React.useState([
+    "Galvji",
+    "Karla",
+    "Proxima Nova",
+    "SF Pro",
+  ]);
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -26,7 +36,7 @@ const IndexPage = () => {
   };
 
   const handleImageUpload = () => {
-    setIsLoading(true); 
+    setIsLoading(true);
 
     const randomTime = Math.random() * 2000 + 1000; // 1-3 seconds
 
@@ -37,14 +47,18 @@ const IndexPage = () => {
         if (fileName === fontMap[font].filename) {
           setDetectedFont(fontMap[font].font);
           console.log("Detected font:", fontMap[font].font);
-          setIsLoading(false); 
+          setIsLoading(false);
           return;
         }
       }
 
       setDetectedFont("Typeface not found");
-      setIsLoading(false); 
+      setIsLoading(false);
     }, randomTime);
+  };
+
+  const removeSpace = (str) => {
+    return str.replace(/\s+/g, "");
   };
 
   return (
@@ -95,18 +109,45 @@ const IndexPage = () => {
               Upload
             </button>
           </div>
-            {isLoading && (
-                  <div className="flex justify-center mt-4">
-                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+          {isLoading && (
+            <div className="flex justify-center mt-4">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+            </div>
+          )}
+          {!isLoading && detectedFont && (
+            <div>
+              <div className="flex justify-center mt-4">
+                <p className="font-medium text-3xl text-center text-[#265479] py-4">
+                  Detected Typeface: {detectedFont}
+                </p>
+              </div>
+              <div className="flex justify-left mx-20 w-[200%]">
+                <div className="pt-20 px-10 w-2/5">
+                  <h1 className="text-3xl text-left text-[#265479] py-4">
+                    Similar Typeface
+                  </h1>
+                  <div  className="grid grid-cols-4 gap-4">
+                  {fonts.map((font) => (
+                    <div key={font}>
+                      <div className="mb-20 outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg">
+                        <Link href={"/" + removeSpace(font.toLowerCase())}>
+                          <Image
+                            src={"/" + font.toLowerCase() + ".png"}
+                            alt="Picture of the tpyeface"
+                            width={500}
+                            height={500}
+                          />
+                          {/* <FontBox name={font} /> */}
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
                   </div>
-                )}
-                {!isLoading && detectedFont && (
-                  <div className="flex justify-center mt-4">
-                    <p className="font-medium text-xl text-center text-[#0F0800] pb-4">
-                      Detected Typeface: {detectedFont}
-                    </p>
-                  </div>
-                )}
+                </div>
+                ={" "}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>

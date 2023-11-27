@@ -96,17 +96,17 @@ const IndexPage = () => {
       </div>
       <div className="flex justify-left space-x-5 m-5 ml-10 p-2 pl-4">
         <div className="flex space-x-2 text-lg text-left">
-          <div className="text-3xl text-[#265479]">
+          <div className="pl-1 pt-1 text-2xl text-[#265479]">
             <GrFilter />
           </div>
-          <div className="rounded-full text-[#265479] hover:outline outline-[#E6E7E6] outline-2 hover:shadow-md">
+          <div className="px-2 rounded-full text-[#265479] hover:outline outline-[#E6E7E6] outline-2 hover:shadow-md">
             <select onChange={(e) => handleFilterChange(e, "language")}>
               <option value="">All Languages</option>
               <option value="english">English</option>
               <option value="chinese">Chinese</option>
             </select>
           </div>
-          <div className="rounded-full text-[#265479] hover:outline outline-[#E6E7E6] outline-2 hover:shadow-md">
+          <div className="px-2 rounded-full text-[#265479] hover:outline outline-[#E6E7E6] outline-2 hover:shadow-md">
             <select onChange={(e) => handleFilterChange(e, "type")}>
               <option value="">All Types</option>
               <option value="serif">Serif</option>
