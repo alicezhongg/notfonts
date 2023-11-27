@@ -75,19 +75,11 @@ const IndexPage = () => {
       </div>
       <div className="relative">
         <Image
-          src="/not_fonts_background.jpg"
-          alt="Picture of the background"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <Image
-            src="/logo.png"
-            alt="Picture of the logo"
-            width={800}
-            height={300}
-          />
-        </div>
+              src={"/logo_w_bkgd.png"}
+              alt="Picture of the Logo"
+              width={1920}
+              height={1080}
+            />
       </div>
     </>
   );
