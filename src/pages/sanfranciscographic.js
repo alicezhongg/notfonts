@@ -16,7 +16,7 @@ const IndexPage = () => {
       <div>
         <NavBar />
       </div>
-      <div className="pt-20">
+      <div className="pt-20 font-Karla font-regular">
         <div key={font} className=" flex justify-center mx-20">
           <div className="pt-20 px-10 w-2/5">
             <Link href={{ pathname: "/sanfrancisco" }}>
@@ -42,6 +42,7 @@ const IndexPage = () => {
               width={980}
               height={500}
             />
+            <p className="font-light italic">source: iPhone</p>
           </div>
         </div>
       </div>

@@ -12,11 +12,11 @@ const IndexPage = () => {
       <div>
         <NavBar />
       </div>
-      <div className="pt-20">
+      <div className="font-Karla font-regular pt-20">
         <div key={font} className="flex justify-center mx-20">
           <div className="pt-20 px-10 w-2/5">
             <Link href={{ pathname: "/karlaregulartypeface" }}>
-              <h1 className="text-5xl text-left text-[#265479]">
+              <h1 className="font-medium text-5xl text-left text-[#265479]">
                 Playfair Display Bold
               </h1>
             </Link>

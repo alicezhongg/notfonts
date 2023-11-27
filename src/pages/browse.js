@@ -38,7 +38,7 @@ const IndexPage = () => {
         {fonts.map((font) => (
           <div
             key={font}
-            className="outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg"
+            className="font-Karla font-regular outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg"
           >
             <Link href={"/" + removeSpace(font.toLowerCase()) + "graphic"}>
               <Image

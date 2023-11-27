@@ -25,17 +25,17 @@ const IndexPage = () => {
       <div>
         <NavBar />
       </div>
-      <div className="pt-20">
+      <div className="font-Karla font-regular pt-20">
         {fonts.map((font) => (
           <div key={font}>
             <div className=" flex justify-center  mx-20">
               <div className="pt-20 px-10 w-2/5">
                 <Link href={{ pathname: "/playfairdisplaytypeface" }}>
-                  <h1 className="text-5xl text-left text-[#265479]">
+                  <h1 className="font-medium text-5xl text-left text-[#265479]">
                     Playfair Display
                   </h1>
                 </Link>
-                <p className="pt-1 pb-6 text-[#0F0800]">
+                <p className="font-light italic pt-1 pb-6 text-[#0F0800]">
                   Designed by Claus Eggers Sørensen
                 </p>
                 <p className="text-xl pb-3 text-[#0F0800]">
@@ -153,7 +153,7 @@ const IndexPage = () => {
                 <h1 className="text-3xl text-left text-[#265479] py-4">
                   Examples
                 </h1>
-                <div className="outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg">
+                <div className="mb-20 outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg">
                   <Link
                     href={"/" + removeSpace(font.toLowerCase()) + "graphic"}
                   >
@@ -163,8 +163,8 @@ const IndexPage = () => {
                       width={500}
                       height={500}
                     />
+                    <FontBox name={font} />
                   </Link>
-                  <FontBox name={font} />
                 </div>
               </div>
             </div>

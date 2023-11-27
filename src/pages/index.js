@@ -9,17 +9,22 @@ const IndexPage = () => {
       <div>
         <NavBar />
       </div>
-      <div className="flex items-center justify-center h-screen">
-        <div>
-          <h1 className="text-9xl text-center text-[#265479] pb-3">NOTFONTS</h1>
+      <div className="font-Karla font-regular flex items-center justify-center h-screen">
+        <div className="align-middle">
+          <h1 className="text-9xl font-extrabold text-center text-[#265479] pb-3">
+            NOTFONTS
+          </h1>
           <div>
-            <p className="text-3xl text-center text-[#0F0800] pb-10">
-              THEY'RE CALLED TYPEFACES
+            <p className="text-3xl text-center text-[#0F0800]">
+              Never know where to find typefaces? We got you covered!
             </p>
-            <div className="flex justify-center divide-x-2 divide-dashed space-x-20 m-2 ">
+            <p className="text-3xl text-center text-[#0F0800] pb-10">
+              You can even see examples of how they are used in real life!
+            </p>
+            <div className="flex justify-center space-x-20 m-2">
               <div className="w-1/5">
                 <Link href={{ pathname: "/browse" }}>
-                  <p className="text-6xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-md">
+                  <p className="text-6xl text-center py-2 rounded-full text-[#265479] outline outline-[#E6E7E6] outline-2 hover:bg-[#265479] hover:text-[#FFFEFB] hover:shadow-md">
                     Browse
                   </p>
                 </Link>
@@ -32,7 +37,7 @@ const IndexPage = () => {
               </div>
               <div className="w-1/5">
                 <Link href={{ pathname: "/detect" }}>
-                  <p className="text-6xl text-center p-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-md">
+                  <p className="text-6xl text-center p-2 rounded-full text-[#265479] outline outline-[#E6E7E6] outline-2 hover:bg-[#265479] hover:text-[#FFFEFB] hover:shadow-md">
                     Detect
                   </p>
                 </Link>

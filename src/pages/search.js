@@ -35,15 +35,15 @@ const IndexPage = () => {
         <NavBar />
       </div>
       <div>
-        <p className="flex justify-left m-10 p-1 pl-4 outline outline-[#E6E7E6] rounded-full outline-2 text-xl text-[#0F0800]">
+        <p className="font-Karla font-regular flex justify-left m-10 mt-20 p-1 pl-4 outline outline-[#E6E7E6] rounded-full outline-2 text-xl text-[#0F0800]">
           Search...
         </p>
       </div>
-      <div className="m-10 grid grid-cols-3 gap-4">
+      <div className="font-Karla font-regular m-10 grid grid-cols-3 gap-4">
         {fonts.map((font) => (
           <div
             key={font}
-            className="outline outline-[#E6E7E6] bg-[#FFFFFF] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg"
+            className="outline outline-[#E6E7E6] bg-[#FFFFFF] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg "
           >
             <Link href={"/" + removeSpace(font.toLowerCase())}>
               <Image
