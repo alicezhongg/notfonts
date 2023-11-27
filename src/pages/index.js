@@ -30,20 +30,7 @@ const IndexPage = () => {
             <p className="font-light text-2xl text-center text-[#0F0800] pb-10">
               You can even see examples of how they are used in real life!
             </p>
-            <div className="flex justify-center space-x-20 m-2">
-              <div className="w-1/5">
-                <Link href={{ pathname: "/browse" }}>
-                  <p className="text-6xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
-                    Browse
-                  </p>
-                </Link>
-                <div className="m-2 text-2xl text-center text-[#0F0800]">
-                  <p className="p-1">
-                    Need inspo for a specific project? Check out how others use
-                    fonts!
-                  </p>
-                </div>
-              </div>
+            <div className="flex justify-center space-x-10 m-2">
               <div className="w-1/5">
                 <Link href={{ pathname: "/detect" }}>
                   <p className="text-6xl text-center p-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
@@ -52,8 +39,32 @@ const IndexPage = () => {
                 </Link>
                 <div className="m-2 text-center text-2xl text-[#0F0800]">
                   <p className="p-1">
-                    Want to know what font is being used? Try out our AI
-                    typeface detection!
+                    Need to know what typeface you are looking at? Try our AI detector!
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/5">
+                <Link href={{ pathname: "/browse" }}>
+                  <p className="text-6xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
+                    Browse
+                  </p>
+                </Link>
+                <div className="m-2 text-2xl text-center text-[#0F0800]">
+                  <p className="p-1">
+                    Need inspo for a project? Check out how others using
+                    typefaces!
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/5">
+                <Link href={{ pathname: "/search" }}>
+                  <p className="text-6xl text-center p-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
+                    Search
+                  </p>
+                </Link>
+                <div className="m-2 text-center text-2xl text-[#0F0800]">
+                  <p className="p-1">
+                    Need to look for something specific? Look it up here!
                   </p>
                 </div>
               </div>
