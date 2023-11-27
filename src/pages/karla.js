@@ -18,7 +18,7 @@ const removeSpace = (str) => {
 };
 
 const IndexPage = () => {
-  const [fonts, setFonts] = React.useState(["Playfair Display"]);
+  const [fonts, setFonts] = React.useState(["Karla"]);
 
   return (
     <>
@@ -30,16 +30,18 @@ const IndexPage = () => {
           <div key={font}>
             <div className=" flex justify-center  mx-20">
               <div className="pt-20 px-10 w-2/5">
-                <Link href={{ pathname: "/playfairdisplay" }}>
+                <Link href={{ pathname: "/karla" }}>
                   <h1 className="font-medium text-5xl text-left text-[#265479]">
-                    Playfair Display
+                    Karla
                   </h1>
                 </Link>
                 <p className="font-light italic pt-1 pb-6 text-[#0F0800]">
-                  Designed by Claus Eggers Sørensen
+                  Designed by Jonny Pinhorn
                 </p>
                 <p className="text-xl pb-3 text-[#0F0800]">
-                  Regular, Italic, Bold, Bold Italic, Black, Black Italic
+                  Extralight, Extralight Italic, Light, Light Italic, Regular,
+                  Regular Italic, Medium, Medium Italic, Semibold, Semibold
+                  Italic, Bold, Bold Italix, Extrabold, Extrabold Italic
                 </p>
                 <h1 className="text-3xl text-left text-[#265479] py-4">
                   Download
@@ -47,18 +49,8 @@ const IndexPage = () => {
                 <div className="flex justify-left space-x-10">
                   <Link
                     href={{
-                      pathname: "https://fonts.adobe.com/fonts/playfair",
-                    }}
-                    target="_blank"
-                  >
-                    <p className="text-xl text-center p-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
-                      Adobe Fonts
-                    </p>
-                  </Link>
-                  <Link
-                    href={{
                       pathname:
-                        "https://fonts.google.com/specimen/Playfair+Display",
+                        "https://fonts.google.com/specimen/Karla",
                     }}
                     target="_blank"
                   >
@@ -73,7 +65,7 @@ const IndexPage = () => {
                   className="w-full"
                   naturalSlideWidth={100}
                   naturalSlideHeight={72}
-                  totalSlides={6}
+                  totalSlides={14}
                 >
                   <Slider className="outline outline-[#E6E7E6] rounded-lg outline-2 ">
                     <Slide index={0}>

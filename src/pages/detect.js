@@ -18,7 +18,7 @@ const IndexPage = () => {
     "Galvji",
     "Karla",
     "Proxima Nova",
-    "SF Pro",
+    "San Francisco",
   ]);
 
   const [isLoading, setIsLoading] = useState(false);
@@ -121,27 +121,32 @@ const IndexPage = () => {
                   Detected Typeface: {detectedFont}
                 </p>
               </div>
+              <Link href={{ pathname: "/karla" }}>
+                <p className="w-1/4 text-xl text-center py-2 rounded-lg text-[#265479] outline outline-[#E6E7E6] outline-2 hover:outline-2 hover:outline-offset-2 hover:outline-[#265479] hover:shadow-lg">
+                  Go to Typeface
+                </p>
+              </Link>
               <div className="flex justify-left mx-20 w-[200%]">
                 <div className="pt-20 px-10 w-2/5">
                   <h1 className="text-3xl text-left text-[#265479] py-4">
                     Similar Typeface
                   </h1>
-                  <div  className="grid grid-cols-4 gap-4">
-                  {fonts.map((font) => (
-                    <div key={font}>
-                      <div className="mb-20 outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg">
-                        <Link href={"/" + removeSpace(font.toLowerCase())}>
-                          <Image
-                            src={"/" + font.toLowerCase() + ".png"}
-                            alt="Picture of the tpyeface"
-                            width={500}
-                            height={500}
-                          />
-                          {/* <FontBox name={font} /> */}
-                        </Link>
+                  <div className="grid grid-cols-4 gap-4">
+                    {fonts.map((font) => (
+                      <div key={font}>
+                        <div className="mb-20 outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg">
+                          <Link href={"/" + removeSpace(font.toLowerCase())}>
+                            <Image
+                              src={"/" + font.toLowerCase() + ".png"}
+                              alt="Picture of the typeface"
+                              width={500}
+                              height={500}
+                            />
+                            {/* <FontBox name={font} /> */}
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
                   </div>
                 </div>
                 ={" "}
