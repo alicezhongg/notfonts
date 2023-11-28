@@ -17,6 +17,7 @@ const IndexPage = () => {
     "LingWai TC Medium",
     "Miller Display Bold",
     "Playfair Display Bold",
+    "Playfair Display Black",
     "Proxima Nova ExtraBold",
     "Rajdhani Medium",
     "San Francisco",

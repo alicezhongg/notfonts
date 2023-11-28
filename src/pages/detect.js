@@ -157,7 +157,7 @@ const IndexPage = () => {
                             <Image
                               src={"/" + font.toLowerCase() + ".png"}
                               alt="Picture of the typeface"
-                              width={500}
+                              width={600}
                               height={500}
                             />
                             {/* <FontBox name={font} /> */}
