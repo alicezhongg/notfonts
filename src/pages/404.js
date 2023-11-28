@@ -20,7 +20,7 @@ const IndexPage = () => {
           />
           <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <p className="text-3xl text-center text-[#265479]">
-              The page hasn't been made yet XD
+              The page hasn&apos;t been made yet XD
             </p>
             <p className="font-light text-2xl text-center text-[#0F0800]">
               Please go back to the home page!
