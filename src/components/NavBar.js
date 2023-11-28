@@ -9,7 +9,7 @@ const NavBar = () => {
         <Link href={{ pathname: "/" }}>
           <div className="flex justify-left pt-2 pl-2">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Picture of the logo"
               width={100}
               height={50}

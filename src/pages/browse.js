@@ -43,7 +43,7 @@ const IndexPage = () => {
           >
             <Link href={"/" + removeSpace(font.toLowerCase()) + "graphic"}>
               <Image
-                src={"/" + font.toLowerCase() + "graphic.png"}
+                src={"/" + font.toLowerCase() + "graphic.webp"}
                 alt="Picture of the graphic"
                 width={600}
                 height={500}

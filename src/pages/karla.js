@@ -71,7 +71,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_extralight.png"}
+                          src={"/karla_extralight.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -81,7 +81,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_extralight_italic.png"}
+                          src={"/karla_extralight_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -91,7 +91,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_light.png"}
+                          src={"/karla_light.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -101,7 +101,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_light_italic.png"}
+                          src={"/karla_light_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -111,7 +111,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_regular.png"}
+                          src={"/karla_regular.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -121,7 +121,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_italic.png"}
+                          src={"/karla_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -131,7 +131,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_medium.png"}
+                          src={"/karla_medium.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -141,7 +141,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_medium_italic.png"}
+                          src={"/karla_medium_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -151,7 +151,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_semibold.png"}
+                          src={"/karla_semibold.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -161,7 +161,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_semibold_italic.png"}
+                          src={"/karla_semibold_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -171,7 +171,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_bold.png"}
+                          src={"/karla_bold.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -181,7 +181,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_bold_italic.png"}
+                          src={"/karla_bold_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -191,7 +191,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_extrabold.png"}
+                          src={"/karla_extrabold.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -201,7 +201,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/karla_extrabold_italic.png"}
+                          src={"/karla_extrabold_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -229,7 +229,7 @@ const IndexPage = () => {
                     href={"/" + removeSpace(font.toLowerCase()) + "graphic"}
                   >
                     <Image
-                      src={"/" + font.toLowerCase() + "graphic.png"}
+                      src={"/" + font.toLowerCase() + "graphic.webp"}
                       alt="Picture of the graphic"
                       width={600}
                       height={500}

@@ -37,7 +37,7 @@ const IndexPage = () => {
           <div className="w-3/5">
             <Image
               className="outline outline-[#E6E7E6] rounded-lg outline-2"
-              src={"/" + font.toLowerCase() + "graphic.png"}
+              src={"/" + font.toLowerCase() + "graphic.webp"}
               alt="Picture of the graphic"
               width={980}
               height={500}

@@ -10,7 +10,7 @@ const IndexPage = () => {
   const [detectedFont, setDetectedFont] = useState(null);
   const [fontMap, setFontMap] = useState([
     {
-      filename: "karla_test.png",
+      filename: "karla_test.webp",
       font: "Karla",
     },
   ]);
@@ -126,7 +126,7 @@ const IndexPage = () => {
                 <div className="outline outline-[#E6E7E6] rounded-lg outline-2">
                   <Link href={"/karla"}>
                     <Image
-                      src={"/karla.png"}
+                      src={"/karla.webp"}
                       alt="Picture of the typeface"
                       width={600}
                       height={500}
@@ -155,7 +155,7 @@ const IndexPage = () => {
                             target="_blank"
                           >
                             <Image
-                              src={"/" + font.toLowerCase() + ".png"}
+                              src={"/" + font.toLowerCase() + ".webp"}
                               alt="Picture of the typeface"
                               width={600}
                               height={500}

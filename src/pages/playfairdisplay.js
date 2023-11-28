@@ -79,7 +79,7 @@ const IndexPage = () => {
                   <div className="container mx-auto">
                     <Image
                       className=""
-                      src={"/playfair_display_regular.png"}
+                      src={"/playfair_display_regular.webp"}
                       alt="Picture of the typeface"
                       fill={true}
                     />
@@ -89,7 +89,7 @@ const IndexPage = () => {
                   <div className="container mx-auto">
                     <Image
                       className=""
-                      src={"/playfair_display_italic.png"}
+                      src={"/playfair_display_italic.webp"}
                       alt="Picture of the typeface"
                       fill={true}
                     />
@@ -99,7 +99,7 @@ const IndexPage = () => {
                   <div className="container mx-auto">
                     <Image
                       className=""
-                      src={"/playfair_display_bold.png"}
+                      src={"/playfair_display_bold.webp"}
                       alt="Picture of the typeface"
                       fill={true}
                     />
@@ -109,7 +109,7 @@ const IndexPage = () => {
                   <div className="container mx-auto">
                     <Image
                       className=""
-                      src={"/playfair_display_bold_italic.png"}
+                      src={"/playfair_display_bold_italic.webp"}
                       alt="Picture of the typeface"
                       fill={true}
                     />
@@ -119,7 +119,7 @@ const IndexPage = () => {
                   <div className="container mx-auto">
                     <Image
                       className=""
-                      src={"/playfair_display_black.png"}
+                      src={"/playfair_display_black.webp"}
                       alt="Picture of the typeface"
                       fill={true}
                     />
@@ -129,7 +129,7 @@ const IndexPage = () => {
                   <div className="container mx-auto">
                     <Image
                       className=""
-                      src={"/playfair_display_black_italic.png"}
+                      src={"/playfair_display_black_italic.webp"}
                       alt="Picture of the typeface"
                       fill={true}
                     />
@@ -158,7 +158,7 @@ const IndexPage = () => {
                       href={"/" + removeSpace(font.toLowerCase()) + "graphic"}
                     >
                       <Image
-                        src={"/" + font.toLowerCase() + "graphic.png"}
+                        src={"/" + font.toLowerCase() + "graphic.webp"}
                         alt="Picture of the graphic"
                         width={600}
                         height={600}

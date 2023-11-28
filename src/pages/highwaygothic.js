@@ -101,7 +101,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_hairline.png"}
+                          src={"/interstate_hairline.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -111,7 +111,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_hairline_italic.png"}
+                          src={"/interstate_hairline_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -121,7 +121,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_thin.png"}
+                          src={"/interstate_thin.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -131,7 +131,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_thin_italic.png"}
+                          src={"/interstate_thin_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -141,7 +141,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_extra_light.png"}
+                          src={"/interstate_extra_light.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -151,7 +151,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_extra_light_italic.png"}
+                          src={"/interstate_extra_light_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -161,7 +161,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_light.png"}
+                          src={"/interstate_light.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -171,7 +171,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_light_italic.png"}
+                          src={"/interstate_light_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -181,7 +181,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_regular.png"}
+                          src={"/interstate_regular.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -191,7 +191,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_italic.png"}
+                          src={"/interstate_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -201,7 +201,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_bold.png"}
+                          src={"/interstate_bold.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -211,7 +211,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_bold_italic.png"}
+                          src={"/interstate_bold_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -221,7 +221,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_black.png"}
+                          src={"/interstate_black.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -231,7 +231,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_black_italic.png"}
+                          src={"/interstate_black_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -241,7 +241,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_ultra_black.png"}
+                          src={"/interstate_ultra_black.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -251,7 +251,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/interstate_ultra_black_italic.png"}
+                          src={"/interstate_ultra_black_italic.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -279,7 +279,7 @@ const IndexPage = () => {
                     href={"/" + removeSpace(font.toLowerCase()) + "graphic"}
                   >
                     <Image
-                      src={"/" + font.toLowerCase() + "graphic.png"}
+                      src={"/" + font.toLowerCase() + "graphic.webp"}
                       alt="Picture of the graphic"
                       width={600}
                       height={500}

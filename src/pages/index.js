@@ -13,7 +13,7 @@ const IndexPage = () => {
       <div className="font-Karla font-regular flex items-center justify-center h-screen">
         <div className="align-middle">
           <Image
-            src={"/logo_w_bkgd.png"}
+            src={"/logo_w_bkgd.webp"}
             alt="Picture of the Logo"
             width={1920}
             height={1080}
@@ -70,7 +70,7 @@ const IndexPage = () => {
         </div>
       <div className="relative">
         <Image
-          src={"/logo_typefaces.png"}
+          src={"/logo_typefaces.webp"}
           alt="Picture of the Logo Typefaces"
           width={1920}
           height={1080}

@@ -70,7 +70,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/sf pro.png"}
+                          src={"/sf pro.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -80,7 +80,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/sf mono.png"}
+                          src={"/sf mono.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -90,7 +90,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/sf compact.png"}
+                          src={"/sf compact.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -100,7 +100,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/new york.png"}
+                          src={"/new york.webp"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -128,7 +128,7 @@ const IndexPage = () => {
                     href={"/" + removeSpace(font.toLowerCase()) + "graphic"}
                   >
                     <Image
-                      src={"/" + font.toLowerCase() + "graphic.png"}
+                      src={"/" + font.toLowerCase() + "graphic.webp"}
                       alt="Picture of the graphic"
                       width={600}
                       height={500}

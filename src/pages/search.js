@@ -123,7 +123,7 @@ const IndexPage = () => {
           >
             <Link href={"/" + removeSpace(font.name.toLowerCase())}>
               <Image
-                src={"/" + font.name.toLowerCase() + ".png"}
+                src={"/" + font.name.toLowerCase() + ".webp"}
                 alt="Picture of the typeface"
                 width={600}
                 height={500}
