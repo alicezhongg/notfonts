@@ -128,7 +128,7 @@ const IndexPage = () => {
                     <Image
                       src={"/karla.png"}
                       alt="Picture of the typeface"
-                      width={500}
+                      width={600}
                       height={500}
                     />
                   </Link>
@@ -150,7 +150,10 @@ const IndexPage = () => {
                     {fonts.map((font) => (
                       <div key={font}>
                         <div className="mb-20 outline outline-[#E6E7E6] rounded-lg outline-2 hover:outline-[#265479] hover:shadow-lg">
-                          <Link href={"/" + removeSpace(font.toLowerCase())}>
+                          <Link
+                            href={"/" + removeSpace(font.toLowerCase())}
+                            target="_blank"
+                          >
                             <Image
                               src={"/" + font.toLowerCase() + ".png"}
                               alt="Picture of the typeface"

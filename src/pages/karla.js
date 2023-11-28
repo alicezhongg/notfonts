@@ -152,7 +152,7 @@ const IndexPage = () => {
                     <Image
                       src={"/" + font.toLowerCase() + "graphic.png"}
                       alt="Picture of the graphic"
-                      width={500}
+                      width={600}
                       height={500}
                     />
                     <FontBox name={font} />
