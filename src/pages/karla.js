@@ -40,8 +40,8 @@ const IndexPage = () => {
                 </p>
                 <p className="text-xl pb-3 text-[#0F0800]">
                   Extralight, Extralight Italic, Light, Light Italic, Regular,
-                  Regular Italic, Medium, Medium Italic, Semibold, Semibold
-                  Italic, Bold, Bold Italix, Extrabold, Extrabold Italic
+                  Italic, Medium, Medium Italic, Semibold, Semibold Italic,
+                  Bold, Bold Italix, Extrabold, Extrabold Italic
                 </p>
                 <h1 className="text-3xl text-left text-[#265479] py-4">
                   Download
@@ -49,8 +49,7 @@ const IndexPage = () => {
                 <div className="flex justify-left space-x-10">
                   <Link
                     href={{
-                      pathname:
-                        "https://fonts.google.com/specimen/Karla",
+                      pathname: "https://fonts.google.com/specimen/Karla",
                     }}
                     target="_blank"
                   >
@@ -72,7 +71,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/playfair_display_regular.png"}
+                          src={"/karla_extralight.png"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -82,7 +81,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/playfair_display_italic.png"}
+                          src={"/karla_extralight_italic.png"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -92,7 +91,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/playfair_display_bold.png"}
+                          src={"/karla_light.png"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -102,7 +101,7 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/playfair_display_bold_italic.png"}
+                          src={"/karla_light_italic.png"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
@@ -112,17 +111,97 @@ const IndexPage = () => {
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/playfair_display_black.png"}
+                          src={"/karla_regular.png"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
                       </div>
                     </Slide>
-                    <Slide index={4}>
+                    <Slide index={5}>
                       <div className="container mx-auto">
                         <Image
                           className=""
-                          src={"/playfair_display_black_italic.png"}
+                          src={"/karla_italic.png"}
+                          alt="Picture of the typeface"
+                          fill={true}
+                        />
+                      </div>
+                    </Slide>
+                    <Slide index={6}>
+                      <div className="container mx-auto">
+                        <Image
+                          className=""
+                          src={"/karla_medium.png"}
+                          alt="Picture of the typeface"
+                          fill={true}
+                        />
+                      </div>
+                    </Slide>
+                    <Slide index={7}>
+                      <div className="container mx-auto">
+                        <Image
+                          className=""
+                          src={"/karla_medium_italic.png"}
+                          alt="Picture of the typeface"
+                          fill={true}
+                        />
+                      </div>
+                    </Slide>
+                    <Slide index={8}>
+                      <div className="container mx-auto">
+                        <Image
+                          className=""
+                          src={"/karla_semibold.png"}
+                          alt="Picture of the typeface"
+                          fill={true}
+                        />
+                      </div>
+                    </Slide>
+                    <Slide index={9}>
+                      <div className="container mx-auto">
+                        <Image
+                          className=""
+                          src={"/karla_semibold_italic.png"}
+                          alt="Picture of the typeface"
+                          fill={true}
+                        />
+                      </div>
+                    </Slide>
+                    <Slide index={10}>
+                      <div className="container mx-auto">
+                        <Image
+                          className=""
+                          src={"/karla_bold.png"}
+                          alt="Picture of the typeface"
+                          fill={true}
+                        />
+                      </div>
+                    </Slide>
+                    <Slide index={11}>
+                      <div className="container mx-auto">
+                        <Image
+                          className=""
+                          src={"/karla_bold_italic.png"}
+                          alt="Picture of the typeface"
+                          fill={true}
+                        />
+                      </div>
+                    </Slide>
+                    <Slide index={12}>
+                      <div className="container mx-auto">
+                        <Image
+                          className=""
+                          src={"/karla_extrabold.png"}
+                          alt="Picture of the typeface"
+                          fill={true}
+                        />
+                      </div>
+                    </Slide>
+                    <Slide index={13}>
+                      <div className="container mx-auto">
+                        <Image
+                          className=""
+                          src={"/karla_extrabold_italic.png"}
                           alt="Picture of the typeface"
                           fill={true}
                         />
