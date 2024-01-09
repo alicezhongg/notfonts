@@ -12,9 +12,12 @@ const IndexPage = () => {
       </div>
       <div className="font-Karla font-regular flex items-center justify-center h-screen">
         <div className="align-middle">
-          <h1 className="text-6xl text-center text-[#265479]">
-            Allie's Zhang
-          </h1>
+          <Image
+            src={"/logo_w_bkgd.webp"}
+            alt="Picture of the Logo"
+            width={1920}
+            height={1080}
+          />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[30%]">
             <p className="text-3xl text-center text-[#265479]">
               Never know where to find typefaces? We got you covered!
